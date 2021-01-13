@@ -39,13 +39,6 @@ body {
   font-size: calc(1rem + 0.25vh);
 }
 
-h1 {
-    color: var(--heading-color);
-    font-family: "Sansita One", serif;
-    font-size: 2rem;
-    margin-bottom: 1vh;
-}
-
 p {
   font-size: 1.1rem;
   line-height: 1.6rem;
