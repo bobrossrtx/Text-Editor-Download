@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+  
   body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: black;
   }
   
   .title_main {
+    font-family: 'Yusei Magic', sans-serif;
     text-align: center;
     /* margin-top: 10px; */
     margin-left: 0%;
     font-size: 45px;
+    color: black;
   }
   
   .jumbotron {
+    font-family: 'Yusei Magic', sans-serif;
     background-color: rgb(208, 208, 208);
     margin-bottom: 2rem;
     height: 10em;
@@ -120,14 +126,14 @@
     }
   }
 
-   @media screen and (max-width: 990px) {
+   /* @media screen and (max-width: 990px) {
     .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
       display:inline;
       flex-wrap: inherit;
       align-items: center;
       justify-content: space-between;
     }
-  } 
+  }  */
 
  .footer-nav, .footer .credits {
     line-height: 25px;
@@ -164,8 +170,6 @@
       flex: 0 0 auto;
       width: 100%;
     }
-
-
   }
 
   @media screen and (max-width: 770px) {
@@ -178,6 +182,7 @@
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
+    width: 15%;
   }
 
   .sidebar-sticky {
@@ -190,44 +195,6 @@
 
   .flex-column {
     flex-direction: column !important;
-  }
-
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    width: 15%;
-    background-color: #dddddd;
-    border-right: 1px solid rgba(0, 0, 0, 0.029);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.029);
-  }
-
-  .nav-list {
-    list-style: none;
-  }
-
-  .navbar {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.029);
-    position: sticky;
-    width: 100%;
-  }
-
-  ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-  }
-
-  .nav-link {
-    color: black;
-  }
-
-  .nav-link:hover {
-    color: rgb(65, 65, 65);
   }
 
   .overlay {
@@ -283,4 +250,8 @@
     .popup{
       width: 70%;
     }
+  }
+  
+  .downloads-header{
+    font-family: 'Yusei Magic', sans-serif !important;
   }

@@ -10,17 +10,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/darkmode.css" />
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Text Editor</a>
-            <div id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" aria-current="page" href="./pages/cs/csoon.html">Features</a>
-                    <a class="nav-link" aria-current="page" href="./pages/docs.html">Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <em class="fas fa-caret-down"></em>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </div>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" aria-current="page" href="./pages/cs/csoon.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/docs.html">Docs</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -37,17 +55,8 @@
                     <a class="header_link btn-default btn" href="./pages/download.html">Download</a>
                 </p>
             </div>
-        </div> 
-    </div>
-
-    <!-- <div class="header_box">
-        <h1 class="title_main">Text Editor</h1>
-        <div class="header_link--container">
-            <a class="header_link btn-default btn" href="#">Features</a>
-            <a class="header_link middle-link btn-default btn" href="./pages/docs.html">Docs</a>
-            <a class="header_link btn-default btn" href="./pages/download.html">Download</a>
         </div>
-    </div> -->
+    </div>
 
     <br>
 
@@ -62,12 +71,20 @@
                         Text Editor
                     </h2>
                     <p>
-                        The Text Editor is a simple and easy to use environment for writing documents or maybe even code.
-It is a text editor and source code editor for use under Microsoft Windows. It supports around 30 programming languages.
-Although it is not truly recommended for development or heavy programming, It is at most capable of doing most programming tasks. The main limitations to the idea of using this text editor as your main programming tool is the lack of IDE conveniences listing from: No consoles, No built in terminal, No syntax highlighting, No error detection. Like said, the editor is not made for coding, but is fully able to.
-The main intent of the text editor is to have a quick and fast way to type out notes, scripts, letters, emails or many more plain text files.
-The simple design keeps many distractions from flying in and taking over your perspective and to not clutter your screen taking up any more
-video memory than it needs. 
+                        The Text Editor is a simple and easy to use environment for writing documents or maybe even
+                        code.
+                        It is a text editor and source code editor for use under Microsoft Windows. It supports around
+                        30 programming languages.
+                        Although it is not truly recommended for development or heavy programming, It is at most capable
+                        of doing most programming tasks. The main limitations to the idea of using this text editor as
+                        your main programming tool is the lack of IDE conveniences listing from: No consoles, No built
+                        in terminal, No syntax highlighting, No error detection. Like said, the editor is not made for
+                        coding, but is fully able to.
+                        The main intent of the text editor is to have a quick and fast way to type out notes, scripts,
+                        letters, emails or many more plain text files.
+                        The simple design keeps many distractions from flying in and taking over your perspective and to
+                        not clutter your screen taking up any more
+                        video memory than it needs.
                     </p>
                 </div>
             </div>
@@ -81,18 +98,29 @@ video memory than it needs.
         </a>
     </div>
 
+    <br><br><br><br><br>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+     <input type="checkbox" id="checkbox" />
+     <div class="slider round"></div>
+   </label>
+     <em class="enable-darkmode-text">Enable Dark Mode!</em>
+   </div>
+
     <footer class="footer footer-black footer-white">
         <div class="container">
             <div class="row">
                 <nav class="footer-nav">
                     <ul>
                         <li>
-                            © 
+                            ©
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> 
-                            made with <em class="fas fa-code"></em> by <a class="link-white" href="https://github.com/bobrossrtx/" target="_blank">
-                            Owen Boreham</a>    
+                            </script>
+                            made with <em class="fas fa-code"></em> by <a class="link-white"
+                                href="https://github.com/bobrossrtx/" target="_blank">
+                                Owen Boreham</a>
                         </li>
                         <li>
                             <a class="link-white" href="https://owen-boreham-blog.web.app/" target="_blank">
@@ -114,6 +142,11 @@ video memory than it needs.
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="./js/darkmode.js"></script>
 </body>
 
 </html>

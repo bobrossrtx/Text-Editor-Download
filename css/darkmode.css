@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #262626;
+    --secondary-color: #6d6d6d;
+    --font-color: #000000;
+    --bg-color: #fff;
+    --heading-color: #4f4f4f;
+}
+
+[data-theme="light"] {
+  --primary-color: #262626;
+  --secondary-color: #6d6d6d;
+  --font-color: #000000;
+  --bg-color: #fff;
+  --heading-color: #4f4f4f;
+}
+
+[data-theme="dark"] {
+    --primary-color: #5f5f5f;
+    --secondary-color: #aaaaaa;
+    --font-color: #ffffff;
+    --bg-color: #767676;
+    --heading-color: rgb(72 72 72 / 1);
+    --link: #ffffff;
+    --table-color: #fff;
+}
+
+.jumbotron {
+  background-color: var(--secondary-color)!important;
+}
+
+.link {
+  color: var(--logo-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin: 0 auto;
+  font-size: calc(1rem + 0.25vh);
+}
+
+h1 {
+    color: var(--heading-color);
+    font-family: "Sansita One", serif;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+section {
+  max-width: 68%;
+  margin: 0 auto;
+}
+
+.post-meta {
+  font-size: 1rem;
+  font-style: italic;
+  display: block;
+  margin-bottom: 4vh;
+  color: var(--secondary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+/*slider switch css */
+.theme-switch-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 10px;
+  bottom: 15%;
+}
+
+.enable-darkmode-text {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.table {
+  color: var(--table-color);
+}
+
+.downloads-header{
+  color: var(--font-color);
+}
