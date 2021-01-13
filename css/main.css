@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
   
   body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
     color: black;
   }
   
   .title_main {
     /* font-family: 'Yusei Magic', sans-serif; */
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
     text-align: center;
     /* margin-top: 10px; */
     margin-left: 0%;
@@ -254,6 +254,6 @@
   }
   
   .downloads-header{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
     /* font-family: 'Yusei Magic', sans-serif !important; */
   }
